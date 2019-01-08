@@ -10,8 +10,13 @@ keras
 tqdm
 midi
 
-Usage:
 
-python BachProp.py <name of folder containing midi in the data directory> <"load" to load a trained model or "train" to train a new model>
+To create a folder in the save directory with generated MIDI files from a trained model on Bach's Chorales:
 
-This will create a folder in the save directory with generated MIDI files
+python BachProp.py ChoralesMusic21 load
+
+To train and save a model on DATASET (provided the midi data are in a midi folder inside a directory named DATASET in the data directory):
+
+python BachProp.py DATASET train
+
+
